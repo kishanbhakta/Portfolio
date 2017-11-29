@@ -1,0 +1,30 @@
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+/*Home Page Intro*/
+.intro-container{
+  width: 80%;
+  margin: 5% auto;
+}
+.intro{
+  font-family: 'Work Sans', sans-serif;
+  @include media-breakpoint-between(xs, sm) {
+    font-size: 25px;
+  }
+  @include media-breakpoint-between(sm, md) {
+    font-size: 28px;
+  }
+  @include media-breakpoint-between(md, lg) {
+    font-size: 32px;
+  }
+  @include media-breakpoint-between(lg, xl) {
+    font-size: 38px;
+  }
+}
+
+
+/*Description Header and Description*/
+.description-header{
+
+}

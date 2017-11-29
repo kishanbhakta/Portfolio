@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'kdb-experience-page',
   templateUrl: './experience-page.component.html',
-  styleUrls: ['./experience-page.component.css']
+  styleUrls: ['./experience-page.component.scss']
 })
 export class ExperiencePageComponent implements OnInit {
 
