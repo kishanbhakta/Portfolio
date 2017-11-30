@@ -1,5 +1,21 @@
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+
+.logo-container {
+  @include media-breakpoint-between(xs, sm) {
+    width: 25%;;
+  }
+  @include media-breakpoint-between(sm, md) {
+    width: 20%;
+  }
+  @include media-breakpoint-between(md, xl) {
+    width: 15%;
+  }
+}
+
 .logo {
-  width: 5rem;
+  width: 100%;
 }
 
 .navigation-menu-item {

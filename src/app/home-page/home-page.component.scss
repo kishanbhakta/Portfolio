@@ -3,12 +3,27 @@
 @import '~bootstrap/scss/mixins/_breakpoints';
 
 /*Home Page Intro*/
-.intro-container{
-  width: 80%;
+.intro-container {
+  width: 50%;
   margin: 5% auto;
+  font-family: 'Work Sans', sans-serif;
+  @include media-breakpoint-between(xs, sm) {
+    width: 80%;;
+  }
+  @include media-breakpoint-between(sm, md) {
+    width: 75%;
+  }
+  @include media-breakpoint-between(md, lg) {
+    width: 65%;
+  }
+  @include media-breakpoint-between(lg, xl) {
+    width: 60%;
+  }
 }
 .intro{
   font-family: 'Work Sans', sans-serif;
+  color: #3A0E12;
+  font-weight: 500;
   @include media-breakpoint-between(xs, sm) {
     font-size: 25px;
   }
@@ -23,8 +38,33 @@
   }
 }
 
+.hero-banner{
+  margin: 5% auto;
+  text-align: center;
+}
 
 /*Description Header and Description*/
-.description-header{
-
+.description-header {
+  font-family: 'Work Sans', sans-serif;
+  color: #71806D;
+}
+.description-subheader {
+  font-family: 'Work Sans', sans-serif;
+  color: #3A0E12;
+  @include media-breakpoint-between(xs, md) {
+    font-size: 12px;
+  }
+  @include media-breakpoint-between(md, xl) {
+    font-size: 14px;
+  }
+}
+.description {
+  font-family: 'Taviraj', serif;
+  color: #4B6D7B;
+  @include media-breakpoint-between(xs, md) {
+    font-size: 14px;
+  }
+  @include media-breakpoint-between(md, xl) {
+    font-size: 18px;
+  }
 }
