@@ -22,7 +22,7 @@
 }
 .intro{
   font-family: 'Work Sans', sans-serif;
-  color: #3A0E12;
+  color: #4D8F8B;
   font-weight: 500;
   @include media-breakpoint-between(xs, sm) {
     font-size: 25px;
@@ -50,7 +50,7 @@
 }
 .description-subheader {
   font-family: 'Work Sans', sans-serif;
-  color: #3A0E12;
+  color: #A37864;
   @include media-breakpoint-between(xs, md) {
     font-size: 12px;
   }
@@ -60,7 +60,7 @@
 }
 .description {
   font-family: 'Taviraj', serif;
-  color: #4B6D7B;
+  color: #3A0E12;
   @include media-breakpoint-between(xs, md) {
     font-size: 14px;
   }
@@ -68,3 +68,99 @@
     font-size: 18px;
   }
 }
+.equation {
+  color: #FC2721;
+}
+.equation-variables{
+  color: #4D8F8B;
+  //color: #4D8F8B;
+}
+
+.style-one {
+  border-top: 4px double #8c8b8b;
+  text-align: center;
+}
+.style-one:after {
+  content: '\0026';
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+  background: #f0f0f0;
+  color: #8c8b8b;
+  font-size: 18px;
+}
+.fe-thumbnail {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* Email Container */
+.email-container {
+  text-align: center;
+  padding:1% 1% 1% 1%;
+}
+
+
+/* Button Styles */
+.email-btn a{
+  color: #A37864;
+}
+.email-btn {
+  transition: all 0.3s;
+  position: relative;
+  font-family: 'Taviraj', serif;
+}
+.email-btn span {
+  transition: all 0.3s;
+}
+.email-btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: RGBA(60, 73, 63, 0.5);
+  border-bottom-color: RGBA(60, 73, 63, 0.5);
+  transform: scale(0.1, 1);
+}
+.email-btn:hover span {
+  letter-spacing: 2px;
+  color: RGBA(142, 169, 146, 1.00);
+}
+.email-btn:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.email-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.email-btn:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+
